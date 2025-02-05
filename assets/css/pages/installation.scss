@@ -1,0 +1,51 @@
+/* ----------------------------------------------------------------------------
+ * @webScheduler - Online Appointment Scheduler
+ *
+ * @package     @webScheduler - Online Appointments
+ * @author      N N.Cara <nilo.cara@frontend.co.za>
+ * @copyright   Copyright (c) Nilo Cara
+ * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
+ * @link        https://webscheduler.co.za
+ * @since       v1.0.0
+ * ---------------------------------------------------------------------------- */
+
+header {
+    background: #daffeb;
+    margin-bottom: 25px;
+}
+
+header .page-title {
+    font-weight: lighter;
+    padding: 40px 0;
+    color: #429a82;
+}
+
+.content p {
+    word-break: break-all;
+}
+
+.alert {
+    margin: 25px 0 10px 0;
+}
+
+footer {
+    padding: 10px 35px;
+    background-color: #fafafa;
+    margin-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+#loading img {
+    margin: auto;
+    display: block;
+}
