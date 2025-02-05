@@ -1,11 +1,8 @@
 <h1 align="center">
     <br>
     <a href="https://webscheduler.co.za">
-        <img src="https://raw.githubusercontent.com/niloc95/webScheduler/cc73715e37c5f26f5355199aa5868408dade234d/logo_black.png" alt="@webScheduler" width="150">
+        <img src="https://raw.githubusercontent.com/niloc95/webScheduler/cc73715e37c5f26f5355199aa5868408dade234d/logo_black.png" alt="@webScheduler" width="600">
     </a>
-    <br>
-    @webScheduler
-    <br>
 </h1>
 
 <br>
