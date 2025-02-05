@@ -1,7 +1,7 @@
 <h1 align="center">
     <br>
-    <a href="https://@webScheduler.org">
-        <img src="https://raw.githubusercontent.com/alextselegidis/@webScheduler/develop/logo.png" alt="@webScheduler" width="150">
+    <a href="https://webscheduler.co.za">
+        <img src="https://raw.githubusercontent.com/niloc95/webScheduler/cc73715e37c5f26f5355199aa5868408dade234d/logo_black.png" alt="@webScheduler" width="150">
     </a>
     <br>
     @webScheduler
@@ -60,10 +60,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com), [Node
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/alextselegidis/@webScheduler.git
+$ git clone https://github.com/niloc95/webScheduler.git
 
 # Go into the repository
-$ cd @webScheduler
+$ cd webScheduler
 
 # Install dependencies
 $ npm install && composer install
@@ -89,10 +89,10 @@ You will need to perform the following steps to install the application on your 
 
 That's it! You can now use @webScheduler at your will.
 
-You will find the latest release at [@webScheduler.org](https://@webScheduler.org).
+You will find the latest release at [webScheduler.co.za](https://webScheduler.co.za).
 If you have problems installing or configuring the application visit the
-[official support group](https://groups.google.com/forum/#!forum/easy-appointments).
-You can also report problems on the [issues page](https://github.com/alextselegidis/@webScheduler/issues)
+
+You can also report problems on the [issues page](https://github.com/niloc95/webScheduler/issues)
 and help the development progress.
 
 ## License 
@@ -101,11 +101,5 @@ Code Licensed Under [GPL v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html) | C
 
 ---
 
-Website [alextselegidis.com](https://alextselegidis.com) &nbsp;&middot;&nbsp;
-GitHub [alextselegidis](https://github.com/alextselegidis) &nbsp;&middot;&nbsp;
-Twitter [@alextselegidis](https://twitter.com/AlexTselegidis)
-
-###### More Projects On Github
-###### ⇾ [Plainpad &middot; Self Hosted Note Taking App](https://github.com/alextselegidis/plainpad)
-###### ⇾ [Questionful &middot; Web Questionnaires Made Easy](https://github.com/alextselegidis/questionful)
-###### ⇾ [Integravy &middot; Service Orchestration At Your Fingertips](https://github.com/alextselegidis/integravy)
+Website [frontend.co.za](https://frontend.co.za) &nbsp;&middot;&nbsp;
+GitHub [nilo](https://github.com/nilo95) &nbsp;&middot;&nbsp;
