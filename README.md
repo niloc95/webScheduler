@@ -11,14 +11,6 @@
     A powerful Open Source Appointment Scheduler that can be installed on your server. 
 </h4>
 
-<p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/alextselegidis/@webScheduler?style=for-the-badge">
-  <img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/alextselegidis/@webScheduler?style=for-the-badge">
-  <img alt="GitHub All Releases" src="https://img.shields.io/github/downloads/alextselegidis/@webScheduler/total?style=for-the-badge">
-  <a href="https://discord.com/invite/UeeSkaw">
-    <img alt="Chat On Discord" src="https://img.shields.io/badge/chat-on%20discord-7289da?style=for-the-badge&logo=discord&logoColor=white">
-  </a>
-</p>
 
 <p align="center">
   <a href="#about">About</a> •

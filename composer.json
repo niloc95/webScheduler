@@ -1,21 +1,20 @@
 {
-    "name": "alextselegidis/@webScheduler",
+    "name": "nilocara/webscheduler",
     "description": "Open Source Web Scheduler",
     "version": "1.5.1",
-    "homepage": "https://@webScheduler.org",
+    "homepage": "https://webscheduler.co.za",
     "type": "project",
     "license": "GPL-3.0",
     "authors": [
         {
-            "name": "Alex Tselegidis",
-            "email": "alextselegidis@gmail.com"
+            "name": "Nilo Cara",
+            "email": "nilo.cara@frontend.co.za"
         }
     ],
     "support": {
-        "issues": "https://github.com/alextselegidis/@webScheduler/issues",
-        "forum": "https://groups.google.com/forum/#!forum/easy-appointments",
-        "wiki": "https://@webScheduler.org/docs",
-        "source": "https://github.com/alextselegidis/@webScheduler"
+        "issues": "https://github.com/niloc95/webScheduler/issues",
+        "wiki": "https://webscheduler.co.za/docs",
+        "source": "https://github.com/niloc95/webScheduler"
     },
     "keywords": [
         "calendar",
