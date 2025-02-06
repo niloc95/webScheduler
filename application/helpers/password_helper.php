@@ -4,11 +4,11 @@
  * @webScheduler - Online Appointment Scheduler
  *
  * @package     @webScheduler
- * @author      A.Tselegidis <alextselegidis@gmail.com>
- * @copyright   Copyright (c) Alex Tselegidis
+ * @author      N. Cara <nilo.cara@frontend.co.za>
+ * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        https://@webScheduler.org
- * @since       v1.0.0
+ * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
 /**

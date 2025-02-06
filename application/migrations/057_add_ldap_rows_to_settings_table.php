@@ -4,11 +4,11 @@
  * @webScheduler - Online Appointment Scheduler
  *
  * @package     @webScheduler
- * @author      A.Tselegidis <alextselegidis@gmail.com>
- * @copyright   Copyright (c) Alex Tselegidis
+ * @author      N. Cara <nilo.cara@frontend.co.za>
+ * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        https://@webScheduler.org
- * @since       v1.3.2
+ * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
 class Migration_Add_ldap_rows_to_settings_table extends EA_Migration
