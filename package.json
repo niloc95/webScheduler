@@ -1,8 +1,8 @@
 {
-  "name": "@webScheduler",
+  "name": "webscheduler",
   "description": "Open Source Web Scheduler",
   "homepage": "https://@webScheduler.org",
-  "author": "A.Tselegidis <alextselegidis@gmail.com>",
+  "author": "N.N Cara <nilo.cara@frontend.co.za>",
   "license": "GPL-3.0",
   "keywords": [
     "calendar",

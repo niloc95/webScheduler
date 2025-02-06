@@ -4,7 +4,7 @@
  * @webScheduler - Open Source Web Scheduler
  *
  * @package     @webScheduler
- * @author      A.Tselegidis <alextselegidis@gmail.com>
+ * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) 2013 - 2020, Alex Tselegidis
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        https://@webScheduler.org
