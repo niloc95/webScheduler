@@ -16,7 +16,7 @@
  *
  * @package Controllers
  */
-class Secretaries_api_v1 extends EA_Controller
+class Secretaries_api_v1 extends WS_Controller
 {
     /**
      * Secretaries_api_v1 constructor.

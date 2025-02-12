@@ -21,9 +21,9 @@
 class Permissions
 {
     /**
-     * @var EA_Controller|CI_Controller
+     * @var WS_Controller|CI_Controller
      */
-    protected EA_Controller|CI_Controller $CI;
+    protected WS_Controller|CI_Controller $CI;
 
     /**
      * Permissions constructor.

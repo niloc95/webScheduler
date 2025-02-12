@@ -10,7 +10,7 @@
     <small>
         <span class="footer-powered-by small">
             Powered By
-            <a href="https://@webScheduler.org" target="_blank">@webScheduler</a>
+            <a href="https://webScheduler.co.za" target="_blank">@webScheduler</a>
         </span>
 
         <span class="footer-options">

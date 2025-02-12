@@ -5,7 +5,7 @@
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -21,8 +21,6 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
 const zip = require('zip-dir');
-
-// const debug = require('gulp-debug');
 
 function archive(done) {
     const filename = '@webScheduler-0.0.0.zip';
@@ -79,7 +77,8 @@ function archive(done) {
 }
 
 function clean(done) {
-    fs.removeSync('assets/js/**/*.min.js');
+    // Delete all CSS and minified CSS files
+    fs.removeSync('assets/css/**/*.css');
     fs.removeSync('assets/css/**/*.min.css');
     done();
 }

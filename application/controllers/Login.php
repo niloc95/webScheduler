@@ -18,7 +18,7 @@
  *
  * @package Controllers
  */
-class Login extends EA_Controller
+class Login extends WS_Controller
 {
     /**
      * Login constructor.

@@ -16,7 +16,7 @@
  *
  * @package Controllers
  */
-class Settings_api_v1 extends EA_Controller
+class Settings_api_v1 extends WS_Controller
 {
     /**
      * Settings_api_v1 constructor.

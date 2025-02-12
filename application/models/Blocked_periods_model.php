@@ -18,7 +18,7 @@
  *
  * @package Models
  */
-class Blocked_periods_model extends EA_Model
+class Blocked_periods_model extends WS_Model
 {
     /**
      * @var array

@@ -7,7 +7,7 @@
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -18,7 +18,7 @@
  *
  * @package Models
  */
-class Consents_model extends EA_Model
+class Consents_model extends WS_Model
 {
     /**
      * @var array

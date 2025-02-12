@@ -7,7 +7,7 @@
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Alex Tselegidis
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -18,7 +18,7 @@
  *
  * @package Controllers
  */
-class Secretaries extends EA_Controller
+class Secretaries extends WS_Controller
 {
     public array $allowed_provider_fields = ['id', 'first_name', 'last_name'];
     public array $allowed_secretary_fields = [

@@ -7,11 +7,11 @@
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Alex Tselegidis
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.2.0
  * ---------------------------------------------------------------------------- */
 
-class Migration_Add_working_plan_exceptions_to_user_settings extends EA_Migration
+class Migration_Add_working_plan_exceptions_to_user_settings extends WS_Migration
 {
     /**
      * Upgrade method.

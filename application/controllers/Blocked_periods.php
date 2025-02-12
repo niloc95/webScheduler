@@ -7,7 +7,7 @@
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Alex Tselegidis
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -18,7 +18,7 @@
  *
  * @package Controllers
  */
-class Blocked_periods extends EA_Controller
+class Blocked_periods extends WS_Controller
 {
     public array $allowed_blocked_period_fields = ['id', 'name', 'start_datetime', 'end_datetime', 'notes'];
 

@@ -6,7 +6,7 @@
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Alex Tselegidis
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 

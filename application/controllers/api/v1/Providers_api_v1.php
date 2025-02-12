@@ -16,7 +16,7 @@
  *
  * @package Controllers
  */
-class Providers_api_v1 extends EA_Controller
+class Providers_api_v1 extends WS_Controller
 {
     /**
      * Providers_api_v1 constructor.

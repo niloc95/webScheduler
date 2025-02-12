@@ -33,7 +33,7 @@
             <div class="mt-2">
                 <small>
                     Powered by
-                    <a href="https://@webScheduler.org">@webScheduler</a>
+                    <a href="https://webScheduler.co.za">@webScheduler</a>
                 </small>
             </div>
 

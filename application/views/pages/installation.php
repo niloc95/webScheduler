@@ -31,7 +31,7 @@
             of @webScheduler.
 
             If you face any problems during the usage of @webScheduler you can always check the
-            <a href="https://@webScheduler.org/docs.html">Documentation</a> and
+            <a href="https://webScheduler.co.za/docs.html">Documentation</a> and
             <a href="https://groups.google.com/group/easy-appointments">Support Group</a> for getting help. You may also
             submit new issues on
             <a href="https://github.com/alextselegidis/@webScheduler/issues">GitHub Issues</a>
@@ -192,7 +192,7 @@
 </div>
 
 <footer>
-    Powered by <a href="https://@webScheduler.org">@webScheduler</a>
+    Powered by <a href="https://webScheduler.co.za">@webScheduler</a>
 </footer>
 
 <?php component('js_vars_script'); ?>

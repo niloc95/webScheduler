@@ -64,7 +64,7 @@
 </div>
 
 <footer>
-    Powered by <a href="https://@webScheduler.org">@webScheduler</a>
+    Powered by <a href="https://webScheduler.co.za">@webScheduler</a>
 </footer>
 
 <script src="<?= asset_url('assets/vendor/@fortawesome-fontawesome-free/fontawesome.min.js') ?>"></script>

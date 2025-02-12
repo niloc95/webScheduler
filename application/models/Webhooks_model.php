@@ -18,7 +18,7 @@
  *
  * @package Models
  */
-class Webhooks_model extends EA_Model
+class Webhooks_model extends WS_Model
 {
     /**
      * @var array

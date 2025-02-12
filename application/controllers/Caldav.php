@@ -21,7 +21,7 @@ use Jsvrcek\ICS\Exception\CalendarEventException;
  *
  * @package Controllers
  */
-class Caldav extends EA_Controller
+class Caldav extends WS_Controller
 {
     /**
      * Caldav constructor.
@@ -94,7 +94,7 @@ class Caldav extends EA_Controller
      */
     public static function sync(string $provider_id): void
     {
-        /** @var EA_Controller $CI */
+        /** @var WS_Controller $CI */
         $CI = get_instance();
 
         $CI->load->library('caldav_sync');

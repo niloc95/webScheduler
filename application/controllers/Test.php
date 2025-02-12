@@ -25,7 +25,7 @@ if (ENVIRONMENT !== 'testing' || !is_cli()) {
  * This controller does not have or need any logic, it is just used so that CI can be loaded properly during the test
  * execution.
  */
-class Test extends EA_Controller
+class Test extends WS_Controller
 {
     /**
      * Placeholder callback.
