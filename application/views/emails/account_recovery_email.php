@@ -32,7 +32,7 @@
     <div id="footer" style="padding: 10px; text-align: center; margin-top: 10px;
                 border-top: 1px solid #EEE; background: #FAFAFA;">
         Powered by
-        <a href="https://@webScheduler.org" style="text-decoration: none;">
+        <a href="https://webScheduler.co.za" style="text-decoration: none;">
             @webScheduler
         </a>
         |

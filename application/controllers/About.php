@@ -18,7 +18,7 @@
  *
  * @package Controllers
  */
-class About extends EA_Controller
+class About extends WS_Controller
 {
     /**
      * About constructor.

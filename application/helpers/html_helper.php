@@ -7,7 +7,7 @@
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -50,7 +50,7 @@ if (!function_exists('component')) {
      */
     function component(string $component, array $vars = [], bool $return = false): string|object
     {
-        /** @var EA_Controller $CI */
+        /** @var WS_Controller $CI */
         $CI = get_instance();
 
         return $CI->load->view('components/' . $component, $vars, $return);

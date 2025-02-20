@@ -5,48 +5,50 @@
  * @var string $user_display_name
  */
 ?>
-<div id="footer" class="d-lg-flex justify-content-lg-start align-items-lg-center p-2 text-center text-lg-left mt-auto">
-    <div class="mb-3 me-lg-5 mb-lg-0">
-        <img class="me-1" src="<?= base_url('assets/img/logo-16x16.png') ?>" alt="@webScheduler Logo">
 
-        <a href="https://@webScheduler.org">@webScheduler</a>
+<link rel="stylesheet" href="<?= base_url('assets/css/layouts/footer.css') ?>">
 
-        <span>v<?= config('version') ?></span>
+<div id="footer" class="d-lg-flex justify-content-lg-between align-items-lg-center p-3 text-center text-lg-start mt-auto bg-light border-top">
+    <!-- Left Section: Logo, Version, and Links -->
+    <div class="d-flex flex-column flex-lg-row align-items-center gap-3 mb-3 mb-lg-0">
+        <!-- Logo and Brand -->
+        <div class="d-flex align-items-center me-lg-4">
+            <img class="me-2" src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webScheduler Logo" style="width: 125px;">
+            
+        </div>
+
+        <!-- Favicon and Copyright -->
+        <div class="d-flex align-items-center me-lg-4">
+            <img class="me-2" src="<?= base_url('assets/img/favicon.ico') ?>" alt="webScheduler" style="width: 24px; height: 24px;">
+            <div>
+                <a href="https://webscheduler.co.za" class="text-decoration-none">webScheduler</a>
+                
+            </div>
+        </div>
+
+        <!-- License Information -->
+        
+        <!-- Language Selector -->
+        <!-- <div class="me-lg-4">
+            <span id="select-language" class="badge bg-dark">
+                <i class="fas fa-language me-2"></i>
+                <?= ucfirst(config('language')) ?>
+            </span>
+        </div> -->
+
+        
+        <!-- Booking Page Link -->
+        <div>
+            <a href="<?= site_url('appointments') ?>" class="text-decoration-none">
+                <?= lang('go_to_booking_page') ?>
+            </a>
+        </div>
     </div>
 
-    <div class="mb-3 me-lg-5 mb-lg-0">
-        <img class="me-1" src="<?= base_url('assets/img/alextselegidis-logo-16x16.png') ?>" alt="Alex Tselegidis Logo">
-
-        <a href="https://alextselegidis.com">Alex Tselegidis</a>
-
-        &copy; <?= date('Y') ?> - Software Development
-    </div>
-
-    <div class="mb-3 me-lg-5 mb-lg-0">
-        <?= lang('licensed_under') ?>
-        <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">
-            GPL-3.0
-        </a>
-    </div>
-
-    <div class="mb-3 me-lg-5 mb-lg-0">
-        <span id="select-language" class="badge bg-dark">
-            <i class="fas fa-language me-2"></i>
-        	<?= ucfirst(config('language')) ?>
-        </span>
-    </div>
-
-    <div class="mb-3 me-lg-5 mb-lg-0">
-        <a href="<?= site_url('appointments') ?>">
-            <?= lang('go_to_booking_page') ?>
-        </a>
-    </div>
-
-    <div class="ms-lg-auto">
-        <strong id="footer-user-display-name">
+    <!-- Right Section: User Display Name -->
+    <div class="ms-lg-auto text-lg-end">
+        <strong id="footer-user-display-name" class="text-dark">
             <?= lang('hello') . ', ' . e($user_display_name) ?>!
         </strong>
     </div>
 </div>
-
-

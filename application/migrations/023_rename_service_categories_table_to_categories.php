@@ -11,7 +11,7 @@
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
-class Migration_Rename_service_categories_table_to_categories extends EA_Migration
+class Migration_Rename_service_categories_table_to_categories extends WS_Migration
 {
     /**
      * Upgrade method.

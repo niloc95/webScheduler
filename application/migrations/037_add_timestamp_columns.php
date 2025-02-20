@@ -5,13 +5,13 @@
  *
  * @package     @webScheduler
  * @author      N.N Cara <nilo.cara@frontend.co.za>
- * @copyright   Copyright (c) 2013 - 2020, Alex Tselegidis
+ * @copyright   Copyright (c) 2013 - 2020, Nilesh Cara
  * @license     http://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        http://@webScheduler.org
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
-class Migration_Add_timestamp_columns extends EA_Migration
+class Migration_Add_timestamp_columns extends WS_Migration
 {
     /**
      * @var string[]

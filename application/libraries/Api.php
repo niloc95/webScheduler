@@ -23,9 +23,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
 class Api
 {
     /**
-     * @var EA_Controller|CI_Controller
+     * @var WS_Controller|CI_Controller
      */
-    protected EA_Controller|CI_Controller $CI;
+    protected WS_Controller|CI_Controller $CI;
 
     /**
      * @var int
@@ -33,9 +33,9 @@ class Api
     protected int $default_length = 20;
 
     /**
-     * @var EA_Model
+     * @var WS_Model
      */
-    protected EA_Model $model;
+    protected WS_Model $model;
 
     /**
      * Api constructor.

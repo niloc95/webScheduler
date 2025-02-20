@@ -3,17 +3,17 @@ info:
   title: @webScheduler API
   version: 1.0.0
   description: These are the OpenAPI specs that describe the REST API of @webScheduler.
-  termsOfService: https://@webScheduler.org/terms-and-conditions
+  termsOfService: https://webScheduler.co.za/terms-and-conditions
   contact:
     name: @webScheduler
-    url: https://@webScheduler.org
+    url: https://webScheduler.co.za
     email: info@@webScheduler.org
   license:
     name: GPL-3.0
     url: https://www.gnu.org/licenses/gpl-3.0.en.html
 externalDocs:
   description: Find out more about @webScheduler
-  url: https://@webScheduler.org/docs.html
+  url: https://webScheduler.co.za/docs.html
 servers:
   - url: https://demo.@webScheduler.org/index.php/api/v1/
   - url: http://localhost/index.php/api/v1/

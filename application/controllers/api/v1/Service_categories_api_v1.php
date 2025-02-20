@@ -16,7 +16,7 @@
  *
  * @package Controllers
  */
-class Service_categories_api_v1 extends EA_Controller
+class Service_categories_api_v1 extends WS_Controller
 {
     /**
      * Service_categories_api_v1 constructor.

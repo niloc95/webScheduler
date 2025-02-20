@@ -87,44 +87,9 @@ $config['url_suffix'] = '';
 */
 
 $languages = [
-    'sq' => 'albanian',
-    'ar' => 'arabic',
-    'bs' => 'bosnian',
-    'bu' => 'bulgarian',
-    'ca' => 'catalan',
-    'cs' => 'czech',
-    'da' => 'danish',
-    'de' => 'german',
-    'el' => 'greek',
+   
     'en' => 'english',
-    'es' => 'spanish',
-    'et' => 'estonian',
-    'fa' => 'persian',
-    'fi' => 'finnish',
-    'fr' => 'french',
-    'he' => 'hebrew',
-    'hi' => 'hindi',
-    'hr' => 'croatian',
-    'hu' => 'hungarian',
-    'it' => 'italian',
-    'ja' => 'japanese',
-    'lb' => 'luxembourgish',
-    'lt' => 'lithuanian',
-    'lv' => 'latvian',
-    'mr' => 'marathi',
-    'nl' => 'dutch',
-    'no' => 'norwegian',
-    'pl' => 'polish',
-    'pt' => 'portuguese',
-    'ro' => 'romanian',
-    'rs' => 'serbian',
-    'ru' => 'russian',
-    'sk' => 'slovak',
-    'sl' => 'slovenian',
-    'sv' => 'swedish',
-    'th' => 'thai',
-    'tr' => 'turkish',
-    'zh' => 'chinese',
+    
 ];
 
 $config['language_codes'] = $languages;
@@ -150,46 +115,9 @@ $config['language_code'] = array_search($config['language'], $languages) ?: 'en'
 |
 */
 $config['available_languages'] = [
-    'albanian',
-    'arabic',
-    'bosnian',
-    'bulgarian',
-    'catalan',
-    'chinese',
-    'croatian',
-    'czech',
-    'danish',
-    'dutch',
+    
     'english',
-    'estonian',
-    'finnish',
-    'french',
-    'german',
-    'greek',
-    'hebrew',
-    'hindi',
-    'hungarian',
-    'italian',
-    'japanese',
-    'latvian',
-    'lithuanian',
-    'luxembourgish',
-    'marathi',
-    'norwegian',
-    'persian',
-    'polish',
-    'portuguese',
-    'portuguese-br',
-    'romanian',
-    'russian',
-    'serbian',
-    'slovak',
-    'slovenian',
-    'spanish',
-    'swedish',
-    'thai',
-    'traditional-chinese',
-    'turkish',
+    
 ];
 
 /*
@@ -226,7 +154,7 @@ $config['enable_hooks'] = true;
 | http://codeigniter.com/user_guide/general/creating_libraries.html
 |
 */
-$config['subclass_prefix'] = 'EA_';
+$config['subclass_prefix'] = 'WS_';
 
 /*
 |--------------------------------------------------------------------------
@@ -363,7 +291,7 @@ $config['encryption_key'] = base64_encode(APPPATH);
 |
 */
 $config['sess_driver'] = 'files';
-$config['sess_cookie_name'] = 'ea_session';
+$config['sess_cookie_name'] = 'ws_session';
 $config['sess_expiration'] = 7200;
 $config['sess_save_path'] = __DIR__ . '/../../storage/sessions';
 $config['sess_match_ip'] = false;

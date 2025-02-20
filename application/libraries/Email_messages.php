@@ -7,7 +7,7 @@
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://@webScheduler.org
+ * @link        https://webScheduler.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -25,9 +25,9 @@ use PHPMailer\PHPMailer\Exception;
 class Email_messages
 {
     /**
-     * @var EA_Controller|CI_Controller
+     * @var WS_Controller|CI_Controller
      */
-    protected EA_Controller|CI_Controller $CI;
+    protected WS_Controller|CI_Controller $CI;
 
     /**
      * Email_messages constructor.

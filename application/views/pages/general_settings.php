@@ -116,7 +116,7 @@
                                     </div>
                                 </div>
 
-                                <div class="mb-3">
+                                <!-- <div class="mb-3">
                                     <label class="form-label" for="theme">
                                         <?= lang('theme') ?>
                                     </label>
@@ -134,7 +134,7 @@
                                             <?= lang('company_color_hint') ?>
                                         </small>
                                     </div>
-                                </div>
+                                </div> -->
 
                             </div>
                         </div>

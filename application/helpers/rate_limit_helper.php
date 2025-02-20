@@ -5,7 +5,7 @@
  *
  * @package     @webScheduler
  * @author      N.N Cara <nilo.cara@frontend.co.za>
- * @copyright   Copyright (c) 2013 - 2020, Alex Tselegidis
+ * @copyright   Copyright (c) 2013 - 2020, Nilesh Cara
  * @license     http://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        http://@webScheduler.org
  * @since       v1.1.0
@@ -27,7 +27,7 @@ if (!function_exists('rate_limit')) {
      */
     function rate_limit(string $ip, int $max_requests = 100, int $duration = 120): void
     {
-        /** @var EA_Controller $CI */
+        /** @var WS_Controller $CI */
         $CI = &get_instance();
 
         $rate_limiting = $CI->config->item('rate_limiting');

@@ -3,7 +3,7 @@
 namespace Tests;
 
 use CI_Controller;
-use EA_Controller;
+use WS_Controller;
 use PHPUnit\Framework\TestCase as PHPUnitTestCase;
 
 /**
@@ -11,9 +11,9 @@ use PHPUnit\Framework\TestCase as PHPUnitTestCase;
  */
 class TestCase extends PHPUnitTestCase {
     /**
-     * @var EA_Controller|CI_Controller
+     * @var WS_Controller|CI_Controller
      */
-    private static EA_Controller|CI_Controller $CI;
+    private static WS_Controller|CI_Controller $CI;
 
     /**
      * Load the framework instance.

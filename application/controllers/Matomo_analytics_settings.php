@@ -18,7 +18,7 @@
  *
  * @package Controllers
  */
-class Matomo_analytics_settings extends EA_Controller
+class Matomo_analytics_settings extends WS_Controller
 {
     /**
      * Matomo_analytics_settings constructor.
