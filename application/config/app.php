@@ -15,4 +15,4 @@ $config['url'] = Config::BASE_URL;
 
 $config['debug'] = Config::DEBUG_MODE;
 
-$config['cache_busting_token'] = 'NCJ77';
+$config['cache_busting_token'] = 'NCV0220'; // This must be changed manually.

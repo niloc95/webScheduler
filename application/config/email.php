@@ -19,3 +19,25 @@ $config['mailtype'] = 'html'; // or 'text'
 // $config['reply_to'] = '';
 $config['crlf'] = "\r\n";
 $config['newline'] = "\r\n";
+
+// Production email configuration:
+
+// <?php
+// defined('BASEPATH') or exit('No direct script access allowed');
+
+
+// $config['useragent'] = '@webScheduler';
+// $config['protocol'] = 'smtp'; // Use 'smtp' for sending via SMTP
+// $config['mailtype'] = 'html'; // Email format: 'html' or 'text'
+// $config['smtp_debug'] = '0'; // Set to '1' for debugging SMTP issues
+// $config['smtp_auth'] = TRUE; // Enable SMTP authentication
+// $config['smtp_host'] = 'smtp.office365.com'; // Microsoft 365 SMTP server
+// $config['smtp_user'] = 'nilo.cara@webscheduler.co.za'; // Your Microsoft 365 email address
+// $config['smtp_pass'] = 'tmpsdxgvcnxhhgrg'; // Use the generated app password here
+// $config['smtp_crypto'] = 'tls'; // Encryption: 'tls' (required for Microsoft 365)
+// $config['smtp_port'] = 587; // Port for Microsoft 365 SMTP
+// $config['from_name'] = 'Apple Day Services'; // Sender's name
+// $config['from_address'] = 'za_admin@webscheduler.co.za'; // Sender's email address
+// $config['reply_to'] = 'Nilo.cara@webscheduler.co.za'; // Reply-to email address
+// $config['crlf'] = "\r\n"; // Newline character
+// $config['newline'] = "\r\n"; // Newline character

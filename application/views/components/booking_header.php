@@ -6,16 +6,21 @@
  */
 ?>
 
-<div id="header">
-    <div id="company-name">
-        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo.png') ?>" alt="logo" id="company-logo">
+<div id="header" class="bg-white shadow-sm p-3">
+    <div id="company-name" class="d-flex align-items-start gap-3 mb-4">
+        <!-- Company Logo -->
+        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo.png') ?>" alt="logo" id="company-logo" class="img-fluid" style="max-height: 80px;">
 
-        <span>
-            <?= e($company_name) ?>
-        </span>
+        <!-- Company Name and Services -->
+        <div class="d-flex flex-column">
+            <!-- Company Name -->
+            <span class="h3 fw-bold mb-1">
+                <?= e($company_name) ?>
+            </span>
 
-        <div class="d-flex justify-content-center justify-content-md-start">
-            <span class="display-booking-selection">
+            <!-- Services -->
+            <span class="text-muted">
+                <span class="display-booking-selection">
                 <?= lang('service') ?> │ <?= lang('provider') ?>
             </span>
         </div>

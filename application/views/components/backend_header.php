@@ -13,7 +13,7 @@
         <!-- Logo and Brand -->
         <div id="header-logo" class="navbar-brand d-flex align-items-center">
             <!-- Logo Image -->
-            <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="logo" >
+            <img src="<?= base_url('assets/img/logo_white.png') ?>" alt="logo" >
             
             <!-- Brand Name and Tagline -->
             <div class="d-flex flex-column">

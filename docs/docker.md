@@ -49,8 +49,6 @@ Phpldapadmin, an admin portal for openldap is available on `http://localhost:820
 
 **Attention:** This configuration is meant to make development easier. It is not intended to server as a production environment!
 
-A production image of @webScheduler can be found at: https://github.com/alextselegidis/@webScheduler-docker
-
 *This document applies to @webScheduler v1.5.1.*
 
 [Back](readme.md)

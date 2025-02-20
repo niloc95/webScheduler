@@ -6,7 +6,7 @@
  * @package     @webSchedulerPatch
  * @version     1.0.0
  * @author      A.Tselegidis <info@alextselegidis.com>
- * @copyright   Copyright (c) 2013 - 2022, Alex Tselegidis
+ * @copyright   Copyright (c) 2013 - 2022, Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        https://webScheduler.co.za
  * @support     @webScheduler v1.x.x

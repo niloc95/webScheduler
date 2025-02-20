@@ -22,18 +22,12 @@
             <img class="me-2" src="<?= base_url('assets/img/favicon.ico') ?>" alt="webScheduler" style="width: 24px; height: 24px;">
             <div>
                 <a href="https://webscheduler.co.za" class="text-decoration-none">webScheduler</a>
-                <span class="text-muted">&copy; <?= date('Y') ?> - Software Development</span>
+                
             </div>
         </div>
 
         <!-- License Information -->
-        <div class="me-lg-4">
-            <?= lang('licensed_under') ?>
-            <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" class="text-decoration-none">
-                GPL-3.0
-            </a>
-        </div>
-
+        
         <!-- Language Selector -->
         <!-- <div class="me-lg-4">
             <span id="select-language" class="badge bg-dark">
@@ -42,11 +36,7 @@
             </span>
         </div> -->
 
-        <div>
-                <a href="https://webScheduler.co.za" target="blank" class="text-decoration-none fw-bold">@webScheduler</a>
-                <span class="text-muted">v<?= config('version') ?></span>
-            </div>
-
+        
         <!-- Booking Page Link -->
         <div>
             <a href="<?= site_url('appointments') ?>" class="text-decoration-none">

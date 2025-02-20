@@ -5,14 +5,11 @@
 <div id="about-page" class="container backend-page">
     <div id="about" class="col-lg-8 offset-lg-2">
 
-        <div class="text-center my-5">
-            <img src="<?= base_url('assets/img/logo.png') ?>" alt="@webScheduler Logo" class="mb-5">
+        <div class="text-center my-5 header-logo">
+            <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webScheduler" class="mb-5" style="height: 100px;">
 
-            <h3>
-                @webScheduler
-            </h3>
             <h6 class="text-primary">
-                Online Appointment Scheduler
+            Simple scheduling for anything
             </h6>
         </div>
 
@@ -63,24 +60,10 @@
                     <i class="fas fa-external-link-alt me-2"></i>
                     <?= lang('project_issues') ?>
                 </a>
-            </div>
+            </div>        
 
             <div class="col-lg-6 mb-3">
-                <a class="btn btn-outline-secondary d-block" href="https://facebook.com/easyappts" target="_blank">
-                    <i class="fas fa-external-link-alt me-2"></i>
-                    Facebook
-                </a>
-            </div>
-
-            <div class="col-lg-6 mb-3">
-                <a class="btn btn-outline-secondary d-block" href="https://x.com/easyappts" target="_blank">
-                    <i class="fas fa-external-link-alt me-2"></i>
-                    X.com
-                </a>
-            </div>
-
-            <div class="col-lg-6 mb-3">
-                <a class="btn btn-outline-secondary d-block" href="https://webScheduler.co.za/get-a-free-quote" target="_blank">
+                <a class="btn btn-outline-secondary d-block" href="https://webScheduler.co.za/contact" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
                     Customize E!A
                 </a>
