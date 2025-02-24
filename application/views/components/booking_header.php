@@ -9,7 +9,7 @@
 <div id="header" class="bg-white shadow-sm p-3">
     <div id="company-name" class="d-flex align-items-start gap-3 mb-4">
         <!-- Company Logo -->
-        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo.png') ?>" alt="logo" id="company-logo" class="img-fluid" style="max-height: 80px;">
+        <img src="<?= vars('company_logo') ?: base_url('assets/img/logo_white.png') ?>" alt="logo" id="company-logo" class="img-fluid" style="max-height: 80px;">
 
         <!-- Company Name and Services -->
         <div class="d-flex flex-column">

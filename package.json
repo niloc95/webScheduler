@@ -15,10 +15,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alextselegidis/@webScheduler.git"
+    "url": "git+https://github.com/niloc95/webScheduler/issues"
   },
   "bugs": {
-    "url": "https://github.com/alextselegidis/@webScheduler/issues"
+    "url": "https://github.com/niloc95/webScheduler/issues"
   },
   "engines": {
     "node": ">=14"

@@ -12,7 +12,7 @@
   2. **TRANSLATE EACH STRING WITHIN YOUR "TRANSLATION_LANG.PHP" FILE INTO YOUR LANGUAGE.** You will just have to replace the English strings with your translation. Example >> `$lang['page_title'] = 'Write your translation here!';`
   3. **TELL @webScheduler THAT YOU HAVE ADDED A NEW TRANSLATION.** When you are finished with the translation you will need to make some changes into the core config file of @webScheduler located at "/application/config/config.php" in order to tell the application that there is a new translation available. Find line 90 and add your language to the array. Example >> `$config['available_languages'] = array('english', 'german', 'greek', 'hungarian', 'portuguese', 'french');`. Then change the default language, though this is optional (e.g.` $config['language'] = 'english';`).
 
-Follow these steps in order to add or adjust your translations and modify the message of the user interface of @webScheduler. If you want contribute to the translation process of @webScheduler please read the [Get Involved](https://github.com/alextselegidis/@webScheduler/wiki/Get-Involved!) wiki page for more information. Please share your translations with the user community. 
+Follow these steps in order to add or adjust your translations and modify the message of the user interface of @webScheduler. If you want contribute to the translation process of @webScheduler please read the [Get Involved](https://github.com/niloc95/webSchedulr-Reborn) wiki page for more information. Please share your translations with the user community. 
 
 *This document applies to @webScheduler v1.5.1.*
 

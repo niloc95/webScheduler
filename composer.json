@@ -37,12 +37,13 @@
         "gregwar/captcha": "^1.1.9",
         "jsvrcek/ics": "^0.8.4",
         "monolog/monolog": "^2.8.0",
-        "google/apiclient": "^2.12.6",
+        "google/apiclient": "^2.18",
         "guzzlehttp/guzzle": "^7.9.2",
         "sabre/vobject": "^4.5",
         "ezyang/htmlpurifier": "^4.17",
         "symfony/finder": "^6.4",
-        "phpmailer/phpmailer": "^6.9"
+        "phpmailer/phpmailer": "^6.9",
+        "google/apiclient-services": "^0.395.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",

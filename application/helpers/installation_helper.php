@@ -19,7 +19,7 @@
  *
  * Notice: You can add more checks into this file in order to further check the installation state of the application.
  *
- * @return bool Returns whether E!A is installed or not.
+ * @return bool Returns whether webSchdeulr is installed or not.
  */
 function is_app_installed(): bool
 {

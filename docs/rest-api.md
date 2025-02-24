@@ -6,7 +6,7 @@
 
 ### Open API Specification (Swagger File)
 
-The project has a ready-made [OpenApi file](https://raw.githubusercontent.com/alextselegidis/@webScheduler/master/openapi.yml) you can download and use in order to create your client. 
+
 
 This file can also be imported into Postman, so that you can quickly get started making requests towards your installation. 
 

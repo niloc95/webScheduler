@@ -48,7 +48,7 @@
 
             <div class="col-lg-6 mb-3">
                 <a class="btn btn-outline-secondary d-block"
-                   href="https://groups.google.com/forum/#!forum/easy-appointments" target="_blank">
+                   href="https://frontend-za.atlassian.net/jira/servicedesk/projects/CS/settings/request-types/request-type/1/request-form" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
                     <?= lang('support_group') ?>
                 </a>
@@ -56,7 +56,7 @@
 
             <div class="col-lg-6 mb-3">
                 <a class="btn btn-outline-secondary d-block"
-                   href="https://github.com/alextselegidis/@webScheduler/issues" target="_blank">
+                   href="https://github.com/niloc95/webSchedulr-Reborn/issues" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
                     <?= lang('project_issues') ?>
                 </a>
@@ -65,7 +65,7 @@
             <div class="col-lg-6 mb-3">
                 <a class="btn btn-outline-secondary d-block" href="https://webScheduler.co.za/contact" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
-                    Customize E!A
+                    White Label
                 </a>
             </div>
         </div>

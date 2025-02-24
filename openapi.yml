@@ -7,15 +7,15 @@ info:
   contact:
     name: @webScheduler
     url: https://webScheduler.co.za
-    email: info@@webScheduler.org
+    email: info@@webScheduler.
   license:
     name: GPL-3.0
-    url: https://www.gnu.org/licenses/gpl-3.0.en.html
+    url: https://www.gnu./licenses/gpl-3.0.en.html
 externalDocs:
   description: Find out more about @webScheduler
   url: https://webScheduler.co.za/docs.html
 servers:
-  - url: https://demo.@webScheduler.org/index.php/api/v1/
+  - url: https://demo.@webScheduler./index.php/api/v1/
   - url: http://localhost/index.php/api/v1/
 tags:
   - name: admins
@@ -1944,7 +1944,7 @@ components:
         id: 1
         firstName: Steve
         lastName: Doe
-        email: steve@example.org
+        email: steve@example.
         phone: Test Street 1A
         city: Some Place
         zip: '12345'
@@ -1995,7 +1995,7 @@ components:
       example:
         firstName: Steve
         lastName: Doe
-        email: steve@example.org
+        email: steve@example.
         phone: Test Street 1A
         city: Some Place
         zip: '12345'
@@ -2148,7 +2148,7 @@ components:
         id: 1
         firstName: Jason
         lastName: Doe
-        email: jason@example.org
+        email: jason@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2205,7 +2205,7 @@ components:
       example:
         firstName: Jason
         lastName: Doe
-        email: jason@example.org
+        email: jason@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2290,7 +2290,7 @@ components:
         id: 1
         firstName: Chris
         lastName: Doe
-        email: chris@example.org
+        email: chris@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2407,7 +2407,7 @@ components:
       example:
         firstName: Chris
         lastName: Doe
-        email: chris@example.org
+        email: chris@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2505,7 +2505,7 @@ components:
         id: 1
         firstName: Jessy
         lastName: Doe
-        email: jessy@example.org
+        email: jessy@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2567,7 +2567,7 @@ components:
       example:
         firstName: Jessy
         lastName: Doe
-        email: jessy@example.org
+        email: jessy@example.
         mobile: '+10000000000'
         phone: '+10000000000'
         address: Test Street 1A
@@ -2620,7 +2620,7 @@ components:
       example:
         id: 1
         name: Test Webhook
-        url: https://example.org/webhook?withTestQueryParam=Value
+        url: https://example./webhook?withTestQueryParam=Value
         actions: appointment_create,appointment_update,customer_delete,category_create
         secretToken: SecureSecretTokenHere
         isSslVerified: true
@@ -2642,7 +2642,7 @@ components:
           type: string
       example:
         name: Test Webhook
-        url: https://example.org/webhook?withTestQueryParam=Value
+        url: https://example./webhook?withTestQueryParam=Value
         actions: appointment_create,appointment_update,customer_delete,category_create
         secretToken: SecureSecretTokenHere
         isSslVerified: true

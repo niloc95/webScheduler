@@ -1,11 +1,11 @@
-<?php // Place this file in the root E!A directory and open it with the browser or execute in terminal.
+<?php // Place this file in the root webschedulr directory and open it with the browser or execute in terminal.
 
 /* ----------------------------------------------------------------------------
  * @webScheduler - Patch Utility Script
  *
  * @package     @webSchedulerPatch
  * @version     1.0.0
- * @author      A.Tselegidis <info@alextselegidis.com>
+ * @author      Nilo Cara<nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) 2013 - 2022, Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
  * @link        https://webScheduler.co.za
