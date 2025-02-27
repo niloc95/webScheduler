@@ -2,11 +2,11 @@
 
 > This page will guide you through the activation of the Google Calendar synchronization feature.
 
-Since version 1.0 @webScheduler supports two way synchronization with the Google Calendar API. Every provider can link his Google Calendar account with the application and make sure that any modification made on the schedule is synced between both systems. @webScheduler will add extra information (if available) to Google Calendar events so that users can check event participants, reply whether they will come or not etc. Once the events are on Google Calendar they can then be synced and used by other services that support Google’s API. 
+Since version 1.0 @webSchedulr supports two way synchronization with the Google Calendar API. Every provider can link his Google Calendar account with the application and make sure that any modification made on the schedule is synced between both systems. @webSchedulr will add extra information (if available) to Google Calendar events so that users can check event participants, reply whether they will come or not etc. Once the events are on Google Calendar they can then be synced and used by other services that support Google’s API. 
 
-So, these are the required steps for enabling the Google Calendar Sync feature of @webScheduler.
+So, these are the required steps for enabling the Google Calendar Sync feature of @webSchedulr.
 
-## Working @webScheduler Installation
+## Working @webSchedulr Installation
 
 The installation must be fully functional and configured and needs to have some services and providers.
 
@@ -16,14 +16,14 @@ The synchronization feature requires valid Google API credentials in order to re
 
 - Go to the Google Cloud Console and create a new project.
 - Click on **Use Google APIs** box and enable the Google Calendar API.
-- Then click on the **Credentials** menu item (on the left) and create an **OAuth client ID** for your installation. You will need to fill the consent screen information and then select **Web Application** in the next frame. Give it a client name and add your installation domain as the **Authorised JavaScript origins** (important give only the domain not the complete URL e.g. `http://mywebsite.com`). The **Authorised redirect URIs** field will need the following value `https://url/to/@webScheduler/folder/index.php/google/oauth_callback` (replace `url/to/@webScheduler/installation` with your real domain).
+- Then click on the **Credentials** menu item (on the left) and create an **OAuth client ID** for your installation. You will need to fill the consent screen information and then select **Web Application** in the next frame. Give it a client name and add your installation domain as the **Authorised JavaScript origins** (important give only the domain not the complete URL e.g. `http://mywebsite.com`). The **Authorised redirect URIs** field will need the following value `https://url/to/@webSchedulr/folder/index.php/google/oauth_callback` (replace `url/to/@webSchedulr/installation` with your real domain).
 - Click on **Create** button to complete the wizard. Afterwards Google Cloud will show you two key strings that you need to mark for the following step.
 
 ## Google API Key
 
 Customers will be able to sync their appointments with their Google Calendars but beforehand you will need an API key. Click again on the **Create credentials** button while being in the Credentials overview page and select **API Key**. A modal dialog will be shown asking you the type of key to create. Select the **Browser Key** option and fill the following form with your installation data.
 
-## @webScheduler Syncing Feature
+## @webSchedulr Syncing Feature
 
 To enable the synchronization edit your root config.php file and update the Google Calendar Sync section with your API credentials.
 
@@ -31,11 +31,11 @@ To enable the synchronization edit your root config.php file and update the Goog
   - `GOOGLE_CLIENT_ID` needs the client ID from the OAuth2 credentials.
   - `GOOGLE_CLIENT_SECRET` needs the client secret from the OAuth2 credentials.
   
-4. **Link Google Calendar and @webScheduler**: Go to backend/calendar page, select a provider and click on the "Enable Sync" button. A new window will pop up asking you to grant concern. Enter the user's credentials and the sync will be activated!
+4. **Link Google Calendar and @webSchedulr**: Go to backend/calendar page, select a provider and click on the "Enable Sync" button. A new window will pop up asking you to grant concern. Enter the user's credentials and the sync will be activated!
 
 #### Note that ...
 
-* Currently synchronization can only be triggered from the @webScheduler backend or whenever there are changes in the appointment plan.
+* Currently synchronization can only be triggered from the @webSchedulr backend or whenever there are changes in the appointment plan.
 
 * Every provider user can be synced with only one Google Calendar account.
 
@@ -47,6 +47,6 @@ Google Developers – https://developers.google.com/google-apps/calendar
 
 E!A Support Group – https://groups.google.com/forum/#!forum/easy-appointments
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*
 
 [Back](readme.md)

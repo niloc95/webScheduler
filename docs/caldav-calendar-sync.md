@@ -1,7 +1,7 @@
 # CalDAV Calendar Sync
 
 This page will guide you through the local configuration of Baikal, an Open Source DAV server that can be used to test
-the CalDAV integration of @webScheduler.
+the CalDAV integration of @webSchedulr.
 
 > Note: This guide refers to the available Docker development configuration using docker-compose.yml
 
@@ -14,7 +14,7 @@ Baikal to work.
 
 ### First Configuration Page
 
-- The right time zone value needs to be selected for synchronization to match the information @webScheduler sends.
+- The right time zone value needs to be selected for synchronization to match the information @webSchedulr sends.
 - The "WebDAV authentication type" needs to be set to "Basic"
 - The default username is "admin", so the password for this development account could also be "admin" or something
   similar (easy to remember)
@@ -30,7 +30,7 @@ will be used to sync with.
 
 ## Enabling Sync
 
-After making sure that the local Baikal server works, @webScheduler will be able to connect to it and sync the
+After making sure that the local Baikal server works, @webSchedulr will be able to connect to it and sync the
 appointment data.
 
 Baikal supports multiple user accounts, but for simplicity this guide will refer to the default account created during
@@ -38,13 +38,13 @@ the initial setup.
 
 ### Credentials
 
-While trying to enable the CalDAV sync from the @webScheduler calendar page, use the following credentials after
+While trying to enable the CalDAV sync from the @webSchedulr calendar page, use the following credentials after
 clicking on "Enable Sync" > "CalDAV".
 
 - URL: http://baikal/dav.php/calendars/<username-from-previous-step>/default/
 - Username: <username-from-previous-step>
 - Password: <password-from-previous-step>
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*
 
 [Back](readme.md)

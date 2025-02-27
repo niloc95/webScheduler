@@ -1,20 +1,20 @@
 <?php // Place this file in the root webschedulr directory and open it with the browser or execute in terminal.
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Patch Utility Script
+ * @webSchedulr - Patch Utility Script
  *
- * @package     @webSchedulerPatch
+ * @package     @webSchedulrPatch
  * @version     1.0.0
  * @author      Nilo Cara<nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) 2013 - 2022, Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
- * @support     @webScheduler v1.x.x
+ * @link        https://webschedulr.co.za
+ * @support     @webSchedulr v1.x.x
  * ---------------------------------------------------------------------------- */
 
 // Config
 
-define('FILES_JSON_URL', 'https://cdn.@webScheduler.org/patch/files.json');
+define('FILES_JSON_URL', 'https://cdn.@webSchedulr.org/patch/files.json');
 
 // Setup 
 
@@ -32,7 +32,7 @@ function detect_local_version()
 
     if ( ! file_exists($config_file_path))
     {
-        die('Failed to detect the local @webScheduler version, please move the patch.php script in the root directory of your @webScheduler installation.');
+        die('Failed to detect the local @webSchedulr version, please move the patch.php script in the root directory of your @webSchedulr installation.');
     }
 
     $contents = file_get_contents($config_file_path);
@@ -250,7 +250,7 @@ function get_new_patch_filenames($new_patches)
 
 // Run
 
-echo LINE_BREAK . '➜ @webScheduler - Patch Utility Script' . LINE_BREAK . LINE_BREAK;
+echo LINE_BREAK . '➜ @webSchedulr - Patch Utility Script' . LINE_BREAK . LINE_BREAK;
 
 $local_version = detect_local_version();
 

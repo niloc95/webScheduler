@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 class Migration_Add_require_captcha_setting extends WS_Migration

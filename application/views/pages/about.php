@@ -6,7 +6,7 @@
     <div id="about" class="col-lg-8 offset-lg-2">
 
         <div class="text-center my-5 header-logo">
-            <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webScheduler" class="mb-5" style="height: 100px;">
+            <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webSchedulr" class="mb-5" style="height: 100px;">
 
             <h6 class="text-primary">
             Simple scheduling for anything
@@ -40,7 +40,7 @@
         
         <div class="row mb-5">
             <div class="col-lg-6 mb-3">
-                <a class="btn btn-outline-secondary d-block" href="https://webScheduler.co.za" target="_blank">
+                <a class="btn btn-outline-secondary d-block" href="https://webschedulr.co.za" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
                     <?= lang('official_website') ?>
                 </a>
@@ -63,7 +63,7 @@
             </div>        
 
             <div class="col-lg-6 mb-3">
-                <a class="btn btn-outline-secondary d-block" href="https://webScheduler.co.za/contact" target="_blank">
+                <a class="btn btn-outline-secondary d-block" href="https://webschedulr.co.za/contact" target="_blank">
                     <i class="fas fa-external-link-alt me-2"></i>
                     White Label
                 </a>

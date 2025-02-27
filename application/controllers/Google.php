@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -35,7 +35,7 @@ class Google extends WS_Controller
     }
 
     /**
-     * Complete synchronization of appointments between Google Calendar and @webScheduler.
+     * Complete synchronization of appointments between Google Calendar and @webSchedulr.
      *
      * This method will completely sync the appointments of a provider with his Google Calendar account. The sync period
      * needs to be relatively small, because a lot of API calls might be necessary and this will lead to consuming the
@@ -152,10 +152,10 @@ class Google extends WS_Controller
                     $google_event = $CI->google_sync->get_event($provider, $local_event['id_google_calendar']);
 
                     if ($google_event->getStatus() == 'cancelled') {
-                        throw new Exception('Event is cancelled, remove the record from @webScheduler.');
+                        throw new Exception('Event is cancelled, remove the record from @webSchedulr.');
                     }
 
-                    // If Google Calendar event is different from @webScheduler appointment then update @webScheduler record.
+                    // If Google Calendar event is different from @webSchedulr appointment then update @webSchedulr record.
                     $local_event_start = strtotime($local_event['start_datetime']);
                     $local_event_end = strtotime($local_event['end_datetime']);
                     $google_event_start = new DateTime(
@@ -183,14 +183,14 @@ class Google extends WS_Controller
                         $events_model->save($local_event);
                     }
                 } catch (Throwable) {
-                    // Appointment not found on Google Calendar, delete from @webScheduler.
+                    // Appointment not found on Google Calendar, delete from @webSchedulr.
                     $events_model->delete($local_event['id']);
 
                     $local_event['id_google_calendar'] = null;
                 }
             }
 
-            // Add Google Calendar events that do not exist in @webScheduler.
+            // Add Google Calendar events that do not exist in @webSchedulr.
             $google_calendar = $provider['settings']['google_calendar'];
 
             try {
@@ -237,7 +237,7 @@ class Google extends WS_Controller
                     continue;
                 }
 
-                // Record doesn't exist in the @webScheduler, so add the event now.
+                // Record doesn't exist in the @webSchedulr, so add the event now.
                 $local_event = [
                     'start_datetime' => $google_event_start->format('Y-m-d H:i:s'),
                     'end_datetime' => $google_event_end->format('Y-m-d H:i:s'),
@@ -295,8 +295,8 @@ class Google extends WS_Controller
      * tokens in the future.
      *
      * IMPORTANT: Because it is necessary to authorize the application using the web server flow (see official
-     * documentation of OAuth), every @webScheduler installation should use its own calendar api key. So in every
-     * api console account, the "http://path-to-@webScheduler/google/oauth_callback" should be included in an
+     * documentation of OAuth), every @webSchedulr installation should use its own calendar api key. So in every
+     * api console account, the "http://path-to-@webSchedulr/google/oauth_callback" should be included in an
      * allowed redirect URL.
      *
      * @throws Exception

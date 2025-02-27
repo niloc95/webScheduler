@@ -23,7 +23,7 @@ services:
       - './docker/mysql:/var/lib/mysql'
     environment:
       - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_DATABASE=@webScheduler
+      - MYSQL_DATABASE=@webSchedulr
       - MYSQL_USER=user
       - MYSQL_PASSWORD=password
     ports:

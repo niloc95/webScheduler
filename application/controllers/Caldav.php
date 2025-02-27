@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler - Online Appointments
+ * @package     @webSchedulr - Online Appointments
  * @author      N N.Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webscheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -185,10 +185,10 @@ class Caldav extends WS_Controller
                 $caldav_event = $CI->caldav_sync->get_event($provider, $local_event['id_caldav_calendar']);
 
                 if (!$caldav_event || $caldav_event['status'] === 'CANCELLED') {
-                    throw new Exception('Event is cancelled, remove the record from @webScheduler.');
+                    throw new Exception('Event is cancelled, remove the record from @webSchedulr.');
                 }
 
-                // If CalDAV Calendar event is different from @webScheduler appointment then update @webScheduler record.
+                // If CalDAV Calendar event is different from @webSchedulr appointment then update @webSchedulr record.
                 $local_event_start = strtotime($local_event['start_datetime']);
                 $local_event_end = strtotime($local_event['end_datetime']);
 
@@ -207,14 +207,14 @@ class Caldav extends WS_Controller
                     $events_model->save($local_event);
                 }
             } catch (Throwable) {
-                // Appointment not found on CalDAV Calendar, delete from @webScheduler.
+                // Appointment not found on CalDAV Calendar, delete from @webSchedulr.
                 $events_model->delete($local_event['id']);
 
                 $local_event['id_caldav_calendar'] = null;
             }
         }
 
-        // Add CalDAV Calendar events that do not exist in @webScheduler.
+        // Add CalDAV Calendar events that do not exist in @webSchedulr.
 
         try {
             $caldav_events = $CI->caldav_sync->get_sync_events($provider, $start_date_time, $end_date_time);
@@ -253,7 +253,7 @@ class Caldav extends WS_Controller
                 continue;
             }
 
-            // Record doesn't exist in the @webScheduler, so add the event now.
+            // Record doesn't exist in the @webSchedulr, so add the event now.
 
             $local_event = [
                 'start_datetime' => $caldav_event['start_datetime'],

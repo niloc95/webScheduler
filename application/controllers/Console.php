@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -48,7 +48,7 @@ class Console extends WS_Controller
     /**
      * Perform a console installation.
      *
-     * Use this method to install @webScheduler directly from the terminal.
+     * Use this method to install @webSchedulr directly from the terminal.
      *
      * Usage:
      *
@@ -70,7 +70,7 @@ class Console extends WS_Controller
     /**
      * Migrate the database to the latest state.
      *
-     * Use this method to upgrade an @webScheduler instance to the latest database state.
+     * Use this method to upgrade an @webSchedulr instance to the latest database state.
      *
      * Notice:
      *
@@ -108,7 +108,7 @@ class Console extends WS_Controller
     /**
      * Create a database backup file.
      *
-     * Use this method to back up your @webScheduler data.
+     * Use this method to back up your @webSchedulr data.
      *
      * Usage:
      *
@@ -126,7 +126,7 @@ class Console extends WS_Controller
     /**
      * Trigger the synchronization of all provider calendars with Google Calendar.
      *
-     * Use this method in a cronjob to automatically sync events between @webScheduler and Google Calendar.
+     * Use this method in a cronjob to automatically sync events between @webSchedulr and Google Calendar.
      *
      * Notice:
      *
@@ -168,7 +168,7 @@ class Console extends WS_Controller
     {
         $help = [
             '',
-            '@webScheduler ' . config('version'),
+            '@webSchedulr ' . config('version'),
             '',
             'Usage:',
             '',

@@ -1,21 +1,21 @@
 openapi: 3.0.3
 info:
-  title: @webScheduler API
+  title: @webSchedulr API
   version: 1.0.0
-  description: These are the OpenAPI specs that describe the REST API of @webScheduler.
-  termsOfService: https://webScheduler.co.za/terms-and-conditions
+  description: These are the OpenAPI specs that describe the REST API of @webSchedulr.
+  termsOfService: https://webschedulr.co.za/terms-and-conditions
   contact:
-    name: @webScheduler
-    url: https://webScheduler.co.za
-    email: info@@webScheduler.
+    name: @webSchedulr
+    url: https://webschedulr.co.za
+    email: info@@webSchedulr.
   license:
     name: GPL-3.0
     url: https://www.gnu./licenses/gpl-3.0.en.html
 externalDocs:
-  description: Find out more about @webScheduler
-  url: https://webScheduler.co.za/docs.html
+  description: Find out more about @webSchedulr
+  url: https://webschedulr.co.za/docs.html
 servers:
-  - url: https://demo.@webScheduler./index.php/api/v1/
+  - url: https://demo.@webSchedulr./index.php/api/v1/
   - url: http://localhost/index.php/api/v1/
 tags:
   - name: admins

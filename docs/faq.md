@@ -2,11 +2,11 @@
 
 ## How do I check that my server has Apache, Php, and MySQL already installed?
 
-@webScheduler is a PHP application and requires an Apache server with PHP and MySQL. The PHP "curl" extension and the Apache "mod_rewrite" module must also be enabled. To check, create a PHP file in your web root with the content `<?php phpinfo(); ?>` and access it via the browser (e.g., "http://domain-name.com/phpinfo.php"). This URL will display server details.
+@webSchedulr is a PHP application and requires an Apache server with PHP and MySQL. The PHP "curl" extension and the Apache "mod_rewrite" module must also be enabled. To check, create a PHP file in your web root with the content `<?php phpinfo(); ?>` and access it via the browser (e.g., "http://domain-name.com/phpinfo.php"). This URL will display server details.
 
 ## How do I create a Google Calendar API key?
 
-To integrate Google Calendar with @webScheduler, create an API key using a Google account. After logging in, go to the Google Developers Console, create a new project, enable the Calendar API, and generate an OAuth client ID. Enter the correct redirect URL in the process: "http://domain-name/folder-to-webschedulr-installation/google/oauth_callback" (replace with your actual domain and installation path).
+To integrate Google Calendar with @webSchedulr, create an API key using a Google account. After logging in, go to the Google Developers Console, create a new project, enable the Calendar API, and generate an OAuth client ID. Enter the correct redirect URL in the process: "http://domain-name/folder-to-webschedulr-installation/google/oauth_callback" (replace with your actual domain and installation path).
 
 ## Installation Page Is Not Working
 
@@ -23,9 +23,9 @@ If no hours are showing in the booking wizard, check the Apache error log and th
 
 This issue typically arises from default settings in the clean installation. The default working plan may have breaks, preventing longer services from fitting into available slots. Adjust the working plan or break times for providers to fix this.
 
-## Installing @webScheduler on Subdomain Won't Load Appointment Hours
+## Installing @webSchedulr on Subdomain Won't Load Appointment Hours
 
-If installing @webScheduler on a subdomain, make sure the `$base_url` in `configuration.php` points to the subdomain URL. For example, use `$base_url = 'http://book.mysite.com'` if the subdomain is "book.mysite.com" rather than the main domain's directory.
+If installing @webSchedulr on a subdomain, make sure the `$base_url` in `configuration.php` points to the subdomain URL. For example, use `$base_url = 'http://book.mysite.com'` if the subdomain is "book.mysite.com" rather than the main domain's directory.
 
 ## Change the gap of the available hours of the booking wizard to 60 minutes.
 
@@ -35,6 +35,6 @@ To change the default 15-minute gap to 60 minutes, use a provided script availab
 
 To resolve the "timezone" warning, ensure that your PHP installation has the correct timezone set in the `php.ini` file. If you cannot modify the `php.ini`, set the timezone manually in `index.php` with `date_default_timezone_set('America/Los_Angeles');` (use your own timezone).
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*
 
 [Back](readme.md)

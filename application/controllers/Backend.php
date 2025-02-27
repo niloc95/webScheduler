@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -20,9 +20,9 @@
 | providing additional information on how to migrate your code to the latest   
 | codebase state. 
 |
-| Visit the @webScheduler Developers website for more information:  
+| Visit the @webSchedulr Developers website for more information:  
 |
-|   https://developers.@webScheduler.org
+|   https://developers.@webSchedulr.org
 |
 | Since v1.5, the methods of this controller were ported to standalone controller 
 | classes, that can both handle the page rendering and all asynchronous HTTP  

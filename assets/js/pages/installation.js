@@ -1,11 +1,11 @@
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler - Online Appointments
+ * @package     @webSchedulr - Online Appointments
  * @author      N N.Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webscheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -40,7 +40,7 @@ App.Pages.Installation = (function () {
     });
 
     /**
-     * Event: Install @webScheduler Button "Click"
+     * Event: Install @webSchedulr Button "Click"
      */
     $install.on('click', () => {
         if (!validate()) {
@@ -62,7 +62,7 @@ App.Pages.Installation = (function () {
             dataType: 'json',
         }).done(() => {
             $alert
-                .text('@webScheduler has been successfully installed!')
+                .text('@webSchedulr has been successfully installed!')
                 .addClass('alert-success')
                 .prop('hidden', false);
 

@@ -1,17 +1,17 @@
 <?php
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
 /**
- * @webScheduler Configuration File
+ * @webSchedulr Configuration File
  *
  * Set your installation BASE_URL * without the trailing slash * and the database
  * credentials in order to connect to the database. You can enable the DEBUG_MODE
@@ -39,7 +39,7 @@ class Config
     // ------------------------------------------------------------------------
 
     const DB_HOST = 'mysql';
-    const DB_NAME = '@webScheduler';
+    const DB_NAME = '@webSchedulr';
     const DB_USERNAME = 'user';
     const DB_PASSWORD = 'password';
 

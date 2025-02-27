@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -16,7 +16,7 @@ require_once __DIR__ . '/../core/WS_Migration.php';
 /**
  * Instance library.
  *
- * Handles all @webScheduler instance related functionality.
+ * Handles all @webSchedulr instance related functionality.
  *
  * @package Libraries
  */
@@ -176,7 +176,7 @@ class Instance
 
         $contents = $this->CI->dbutil->backup();
 
-        $filename = '@webScheduler-backup-' . date('Y-m-d-His') . '.gz';
+        $filename = '@webSchedulr-backup-' . date('Y-m-d-His') . '.gz';
 
         write_file(rtrim($path, '/') . '/' . $filename, $contents);
     }

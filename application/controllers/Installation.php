@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.1.0
  * ---------------------------------------------------------------------------- */
 
@@ -52,7 +52,7 @@ class Installation extends WS_Controller
     }
 
     /**
-     * Installs @webScheduler on the server.
+     * Installs @webSchedulr on the server.
      */
     public function perform(): void
     {

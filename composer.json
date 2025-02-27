@@ -2,7 +2,7 @@
     "name": "nilocara/webscheduler",
     "description": "Open Source Web Scheduler",
     "version": "1.5.1",
-    "homepage": "https://webscheduler.co.za",
+    "homepage": "https://webschedulr.co.za",
     "type": "project",
     "license": "GPL-3.0",
     "authors": [
@@ -13,7 +13,7 @@
     ],
     "support": {
         "issues": "https://github.com/niloc95/webScheduler/issues",
-        "wiki": "https://webscheduler.co.za/docs",
+        "wiki": "https://webschedulr.co.za/docs",
         "source": "https://github.com/niloc95/webScheduler"
     },
     "keywords": [
