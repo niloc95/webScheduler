@@ -13,7 +13,7 @@
     <div class="d-flex flex-column flex-lg-row align-items-center gap-3 mb-3 mb-lg-0">
         <!-- Logo and Brand -->
         <div class="d-flex align-items-center me-lg-4">
-            <img class="me-2" src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webScheduler Logo" style="width: 125px;">
+            <img class="me-2" src="<?= base_url('assets/img/logo_black.png') ?>" alt="@webSchedulr Logo" style="width: 125px;">
             
         </div>
 
@@ -21,7 +21,7 @@
         <div class="d-flex align-items-center me-lg-4">
             <img class="me-2" src="<?= base_url('assets/img/favicon.ico') ?>" alt="webScheduler" style="width: 24px; height: 24px;">
             <div>
-                <a href="https://webscheduler.co.za" class="text-decoration-none">webScheduler</a>
+                <a href="https://webschedulr.com" class="text-decoration-none">webSchedulr</a>
                 
             </div>
         </div>

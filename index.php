@@ -38,10 +38,10 @@
 
 /*
  *---------------------------------------------------------------
- * @webScheduler CONFIGURATION
+ * @webSchedulr CONFIGURATION
  *---------------------------------------------------------------
  *
- * Include @webScheduler configuration file so that it is available
+ * Include @webSchedulr configuration file so that it is available
  * globally in the application. You can access configuration information
  * through the static Config class.
  *

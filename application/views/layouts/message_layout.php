@@ -9,7 +9,7 @@
 
     <?php slot('meta'); ?>
 
-    <title><?= vars('page_title') ?> | @webScheduler</title>
+    <title><?= vars('page_title') ?> | @webSchedulr</title>
 
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
     <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">
@@ -31,7 +31,7 @@
             <div class="mt-2">
                 <small>
                     Powered by
-                    <a href="https://webScheduler.co.za">@webScheduler</a>
+                    <a href="https://webschedulr.co.za">@webSchedulr</a>
                 </small>
             </div>
 

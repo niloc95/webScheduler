@@ -1,6 +1,6 @@
-# @webScheduler
+# @webSchedulr
 
-Welcome to the documentation pages of @webScheduler. Navigate through the available sections and learn how to get the most out of your installation. 
+Welcome to the documentation pages of @webSchedulr. Navigate through the available sections and learn how to get the most out of your installation. 
 
 - [Installation](installation-guide.md)
 - [Update](update-guide.md)
@@ -12,4 +12,4 @@ Welcome to the documentation pages of @webScheduler. Navigate through the availa
 - [CalDAV Calendar Sync](caldav-calendar-sync.md)
 - [FAQ](faq.md)
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*

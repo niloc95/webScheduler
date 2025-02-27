@@ -13,7 +13,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <title>Error | @webScheduler</title>
+    <title>Error | @webSchedulr</title>
     <style>
         #error-container {
             background: #ffffff;
@@ -74,7 +74,7 @@
     <p>
         <small>
             Powered by
-            <a href="https://webScheduler.co.za">@webScheduler</a>
+            <a href="https://webschedulr.co.za">@webSchedulr</a>
         </small>
     </p>
 </div>

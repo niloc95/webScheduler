@@ -1,11 +1,11 @@
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N. Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.4.0
  * ---------------------------------------------------------------------------- */
 
@@ -23,7 +23,7 @@ const sass = require('gulp-sass')(require('sass'));
 const zip = require('zip-dir');
 
 function archive(done) {
-    const filename = '@webScheduler-0.0.0.zip';
+    const filename = '@webSchedulr-0.0.0.zip';
 
     fs.removeSync('build');
     fs.removeSync(filename);

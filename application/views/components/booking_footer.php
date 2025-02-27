@@ -10,7 +10,7 @@
     <small class="d-flex justify-content-left align-items-left container">
         <span class="footer-powered-by text-muted d-flex align-items-left">
             Powered By
-            <a href="https://webScheduler.co.za" target="_blank" class="text-decoration-none ms-2">
+            <a href="https://webschedulr.co.za" target="_blank" class="text-decoration-none ms-2">
                 <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="webScheduler Logo" style="height: 40px;">
             </a>
         </span>
@@ -30,7 +30,7 @@
     <small class="d-flex justify-content-between align-items-center container">
         <span class="footer-powered-by text-muted d-flex align-items-center">
             Powered By
-            <a href="https://webScheduler.co.za" target="_blank" class="text-decoration-none ms-2">
+            <a href="https://webschedulr.co.za" target="_blank" class="text-decoration-none ms-2">
                 <img src="<?= base_url('assets/img/logo_black.png') ?>" alt="webScheduler Logo" style="height: 40px;">
             </a>
         </span>

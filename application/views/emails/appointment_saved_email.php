@@ -17,7 +17,7 @@
 <html lang="en">
 <head>
     <title>
-        <?= lang('appointment_details_title') ?> | @webScheduler
+        <?= lang('appointment_details_title') ?> | @webSchedulr
     </title>
 </head>
 <body style="font: 13px arial, helvetica, tahoma;">
@@ -80,9 +80,7 @@
                 <td class="label" style="padding: 3px;font-weight: bold;">
                     <?= lang('timezone') ?>
                 </td>
-                <td style="padding: 3px;">
-                    <?= format_timezone($timezone) ?>
-                </td>
+                
             </tr>
 
             <?php if (!empty($appointment['status'])): ?>
@@ -179,8 +177,8 @@
     <div id="footer" style="padding: 10px; text-align: center; margin-top: 10px;
                 border-top: 1px solid #EEE; background: #FAFAFA;">
         Powered by
-        <a href="https://webScheduler.co.za" style="text-decoration: none;">
-            @webScheduler
+        <a href="https://webschedulr.co.za" style="text-decoration: none;">
+            @webSchedulr
         </a>
         |
         <a href="<?= e($settings['company_link']) ?>" style="text-decoration: none;">

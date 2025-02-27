@@ -1,13 +1,13 @@
 <?php defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Open Source Web Scheduler
+ * @webSchedulr - Open Source Web Scheduler
  *
- * @package     @webScheduler
+ * @package     @webSchedulr
  * @author      N.N Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) 2013 - 2020, Nilesh Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webScheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.4.3
  * ---------------------------------------------------------------------------- */
 

@@ -64,7 +64,7 @@ $route['translate_uri_dashes'] = false;
 | Set the appropriate headers so that iframe control and permissions are 
 | properly configured.
 |
-| Enable this if you want to disable use of @webScheduler within an 
+| Enable this if you want to disable use of @webSchedulr within an 
 | iframe.
 |
 | Options:

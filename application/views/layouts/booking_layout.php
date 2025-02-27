@@ -7,14 +7,14 @@
     <meta name="theme-color" content="#35A768">
     <meta name="google" content="notranslate">
 
-    <meta property="og:title" content="<?= lang('page_title') . ' ' . vars('company_name') ?> | @webScheduler"/>
+    <meta property="og:title" content="<?= lang('page_title') . ' ' . vars('company_name') ?> | @webSchedulr"/>
     <meta property="og:description" content="Book Your Appointment With A Few Clicks"/>
     <meta property="og:url" content="<?= base_url() ?>">
     <meta property="og:type" content="website">
 
     <?php slot('meta'); ?>
 
-    <title><?= lang('page_title') . ' ' . vars('company_name') ?> | @webScheduler</title>
+    <title><?= lang('page_title') . ' ' . vars('company_name') ?> | @webSchedulr</title>
 
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
     <link rel="icon" sizes="192x192" href="<?= asset_url('assets/img/logo.png') ?>">

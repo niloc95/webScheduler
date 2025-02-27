@@ -1,11 +1,11 @@
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler - Online Appointments
+ * @package     @webSchedulr - Online Appointments
  * @author      N N.Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webscheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -52,7 +52,7 @@ App.Utils.CalendarSync = (function () {
 
         const redirectUrl = App.Utils.Url.siteUrl('google/oauth_callback');
 
-        const windowHandle = window.open(authUrl, '@webScheduler', 'width=800, height=600');
+        const windowHandle = window.open(authUrl, '@webSchedulr', 'width=800, height=600');
 
         const authInterval = window.setInterval(() => {
             // When the browser redirects to the Google user consent page the "window.document" variable

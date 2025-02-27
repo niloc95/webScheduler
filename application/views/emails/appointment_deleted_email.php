@@ -14,7 +14,7 @@
 
 <html lang="en">
 <head>
-    <title><?= lang('appointment_cancelled_title') ?> | @webScheduler</title>
+    <title><?= lang('appointment_cancelled_title') ?> | @webSchedulr</title>
 </head>
 <body style="font: 13px arial, helvetica, tahoma;">
 
@@ -175,8 +175,8 @@
     <div id="footer" style="padding: 10px; text-align: center; margin-top: 10px;
                 border-top: 1px solid #EEE; background: #FAFAFA;">
         Powered by
-        <a href="https://webScheduler.co.za" style="text-decoration: none;">
-            @webScheduler
+        <a href="https://webschedulr.co.za" style="text-decoration: none;">
+            @webSchedulr
         </a>
         |
         <a href="<?= e($settings['company_link']) ?>" style="text-decoration: none;">

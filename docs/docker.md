@@ -1,6 +1,6 @@
 # Docker
 
-Run the development containers of @webScheduler with Docker and Docker Compose utility. Docker allows you to compose your application in microservices, so that you can easily get started with the local development.
+Run the development containers of @webSchedulr with Docker and Docker Compose utility. Docker allows you to compose your application in microservices, so that you can easily get started with the local development.
 
 Simply clone the project and run `docker compose up` to start the environment.
 
@@ -21,7 +21,7 @@ class Config {
     // ------------------------------------------------------------------------
     
     const DB_HOST       = 'mysql';
-    const DB_NAME       = '@webScheduler';
+    const DB_NAME       = '@webSchedulr';
     const DB_USERNAME   = 'user';
     const DB_PASSWORD   = 'password';
 
@@ -49,6 +49,6 @@ Phpldapadmin, an admin portal for openldap is available on `http://localhost:820
 
 **Attention:** This configuration is meant to make development easier. It is not intended to server as a production environment!
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*
 
 [Back](readme.md)

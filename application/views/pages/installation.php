@@ -3,7 +3,7 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installation | @webScheduler</title>
+    <title>Installation | @webSchedulr</title>
     <link rel="icon" type="image/x-icon" href="<?= asset_url('assets/img/favicon.ico') ?>">
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/css/themes/default.min.css') ?>">
     <!-- <link rel="stylesheet" type="text/css" href="<?= asset_url('assets/css/general.css') ?>"> -->
@@ -25,7 +25,7 @@
     <div class="container">
         <div class="d-flex flex-column flex-md-row align-items-center justify-content-center">
             <!-- Logo -->
-            <img src="<?= asset_url('assets/img/logo_white.png') ?>" alt="@webScheduler Logo" class="img-fluid me-md-3 mb-3 mb-md-0 logo-image">
+            <img src="<?= asset_url('assets/img/logo_white.png') ?>" alt="@webSchedulr Logo" class="img-fluid me-md-3 mb-3 mb-md-0 logo-image">
             <!-- Page Title -->
             <!-- <h1 class="page-title mb-0"></h1> -->
         </div>
@@ -36,7 +36,7 @@
     <section class="welcome mb-5">
         <h2 class="text-center mb-4">Simple scheduling for anything</h2>
         <p class="text-center">
-            This page will guide you through the initial setup of @webScheduler.
+            This page will guide you through the initial setup of @webSchedulr.
             <!-- <a href="<?= site_url('user/login') ?>" class="text-primary"><?= site_url('user/login') ?></a>. -->
         </p>
         
@@ -120,7 +120,7 @@
         <div class="col-12 text-center">
             <button type="submit" id="install" class="btn btn-primary btn-lg">
                 <i class="icon-white icon-ok me-2"></i>
-                Install @webScheduler
+                Install @webSchedulr
             </button>
         </div>
     </form>
@@ -128,14 +128,14 @@
     <section class="license mt-5">
         
         <p class="text-center">
-            By using @webScheduler, you agree to the terms described in the 
+            By using @webSchedulr, you agree to the terms described in the 
             <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL-3.0 License</a>.
         </p>
     </section>
 </main>
 
 <footer class="bg-light py-3 text-center">
-    <p>Powered by <a href="https://webScheduler.co.za">@webScheduler</a></p>
+    <p>Powered by <a href="https://webschedulr.co.za">@webSchedulr</a></p>
 </footer>
 
 <?php component('js_vars_script'); ?>

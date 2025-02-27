@@ -1,7 +1,7 @@
 <h1 align="center">
     <br>
-    <a href="https://webscheduler.co.za">
-        <img src="https://raw.githubusercontent.com/niloc95/webScheduler/cc73715e37c5f26f5355199aa5868408dade234d/logo_black.png" alt="@webScheduler" width="600">
+    <a href="https://webschedulr.co.za">
+        <img src="https://raw.githubusercontent.com/niloc95/webScheduler/cc73715e37c5f26f5355199aa5868408dade234d/logo_black.png" alt="@webSchedulr" width="600">
     </a>
 </h1>
 
@@ -24,10 +24,10 @@
 
 ## About
 
-**@webScheduler** is a highly customizable web application that allows customers to book appointments with you 
+**@webSchedulr** is a highly customizable web application that allows customers to book appointments with you 
 via a sophisticated web interface. Moreover, it provides the ability to sync your data with Google Calendar so you can 
 use them with other services. It is an open source project that you can download and install **even for commercial use**. 
-@webScheduler will run smoothly with your existing website as it can be installed in a single folder of the 
+@webSchedulr will run smoothly with your existing website as it can be installed in a single folder of the 
 server and of course share an existing database.
 
 ## Features
@@ -71,14 +71,14 @@ You will need to perform the following steps to install the application on your 
 
 * Make sure that your server has Apache/Nginx, PHP (8.2+) and MySQL installed.
 * Create a new database (or use an existing one).
-* Copy the "@webScheduler" source folder on your server.
+* Copy the "@webSchedulr" source folder on your server.
 * Make sure that the "storage" directory is writable.
 * Rename the "config-sample.php" file to "config.php" and update its contents based on your environment.
-* Open the browser on the @webScheduler URL and follow the installation guide.
+* Open the browser on the @webSchedulr URL and follow the installation guide.
 
-That's it! You can now use @webScheduler at your will.
+That's it! You can now use @webSchedulr at your will.
 
-You will find the latest release at [webScheduler.co.za](https://webScheduler.co.za).
+You will find the latest release at [webScheduler.co.za](https://webschedulr.co.za).
 If you have problems installing or configuring the application visit the
 
 You can also report problems on the [issues page](https://github.com/niloc95/webScheduler/issues)

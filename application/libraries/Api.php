@@ -3,13 +3,13 @@
 defined('BASEPATH') or exit('No direct script access allowed');
 
 /* ----------------------------------------------------------------------------
- * @webScheduler - Online Appointment Scheduler
+ * @webSchedulr - Online Appointment Scheduler
  *
- * @package     @webScheduler - Online Appointments
+ * @package     @webSchedulr - Online Appointments
  * @author      N N.Cara <nilo.cara@frontend.co.za>
  * @copyright   Copyright (c) Nilo Cara
  * @license     https://opensource.org/licenses/GPL-3.0 - GPLv3
- * @link        https://webscheduler.co.za
+ * @link        https://webschedulr.co.za
  * @since       v1.0.0
  * ---------------------------------------------------------------------------- */
 
@@ -151,7 +151,7 @@ class Api
     #[NoReturn]
     public function request_authentication(): void
     {
-        header('WWW-Authenticate: Basic realm="@webScheduler"');
+        header('WWW-Authenticate: Basic realm="@webSchedulr"');
         header('HTTP/1.0 401 Unauthorized');
         exit('You are not authorized to use the API.');
     }

@@ -2,15 +2,15 @@
 
 > Learn in which ways you can get involved with the project development!
 
-@webScheduler is an open source project and thus the connection with the users community is stronger than commercial projects. People can contribute in the development and spread of this project and make it even better so that they, themselves can take advantage of it in order to fulfill their business needs. Bellow are described the ways that you can help @webScheduler get better.
+@webSchedulr is an open source project and thus the connection with the users community is stronger than commercial projects. People can contribute in the development and spread of this project and make it even better so that they, themselves can take advantage of it in order to fulfill their business needs. Bellow are described the ways that you can help @webSchedulr get better.
 
 ### Testing 
 
-The most important goal of @webScheduler is performance and stability and that means that **everything must work as expected**. Even though the project has been tested thoroughly during its Beta phase it is important that bugs are tracked down and are fixed as soon as possible. 
+The most important goal of @webSchedulr is performance and stability and that means that **everything must work as expected**. Even though the project has been tested thoroughly during its Beta phase it is important that bugs are tracked down and are fixed as soon as possible. 
 
 ### Suggestions 
 
-Everything you might suggest about the project will be taken into concern and is highly appreciated. Your ideas of new features and enhancements are very important and will help @webScheduler become even better. So do not hesitate to submit your suggestions and feature requests to - 
+Everything you might suggest about the project will be taken into concern and is highly appreciated. Your ideas of new features and enhancements are very important and will help @webSchedulr become even better. So do not hesitate to submit your suggestions and feature requests to - 
 
 ### Translation 
 
@@ -18,8 +18,8 @@ You are more than welcome to help with the translation progress of the user inte
 
 ### User Feedback
 
-It would be much appreciated if you would take 5 minutes of your time to fill this small form on your experience with @webScheduler. User feedback is very important and will help with the future planning of the project. 
+It would be much appreciated if you would take 5 minutes of your time to fill this small form on your experience with @webSchedulr. User feedback is very important and will help with the future planning of the project. 
 
-*This document applies to @webScheduler v1.5.1.*
+*This document applies to @webSchedulr v1.5.1.*
 
 [Back](readme.md)
