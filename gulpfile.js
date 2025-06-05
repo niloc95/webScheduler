@@ -21,65 +21,39 @@ const plumber = require('gulp-plumber');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass')(require('sass'));
 const zip = require('zip-dir');
-
-function archive(done) {
-    const filename = '@webSchedulr-0.0.0.zip';
-
-    fs.removeSync('build');
-    fs.removeSync(filename);
-
-    fs.mkdirsSync('build');
-    fs.copySync('application', 'build/application');
-    fs.copySync('assets', 'build/assets');
-    fs.copySync('system', 'build/system');
-
-    fs.ensureDirSync('build/storage/backups');
-    fs.copySync('storage/backups/.htaccess', 'build/storage/backups/.htaccess');
-    fs.copySync('storage/backups/index.html', 'build/storage/backups/index.html');
-
-    fs.ensureDirSync('build/storage/cache');
-    fs.copySync('storage/cache/index.html', 'build/storage/cache/index.html');
-    fs.copySync('storage/cache/.htaccess', 'build/storage/cache/.htaccess');
-
-    fs.ensureDirSync('build/storage/logs');
-    fs.copySync('storage/logs/.htaccess', 'build/storage/logs/.htaccess');
-    fs.copySync('storage/logs/index.html', 'build/storage/logs/index.html');
-
-    fs.ensureDirSync('build/storage/sessions');
-    fs.copySync('storage/sessions/.htaccess', 'build/storage/sessions/.htaccess');
-    fs.copySync('storage/sessions/index.html', 'build/storage/sessions/index.html');
-
-    fs.ensureDirSync('build/storage/uploads');
-    fs.copySync('storage/uploads/index.html', 'build/storage/uploads/index.html');
-
-    fs.copySync('index.php', 'build/index.php');
-    fs.copySync('patch.php', 'build/patch.php');
-    fs.copySync('composer.json', 'build/composer.json');
-    fs.copySync('composer.lock', 'build/composer.lock');
-    fs.copySync('config-sample.php', 'build/config-sample.php');
-    fs.copySync('CHANGELOG.md', 'build/CHANGELOG.md');
-    fs.copySync('README.md', 'build/README.md');
-    fs.copySync('LICENSE', 'build/LICENSE');
-
-    childProcess.execSync('cd build && composer install --no-interaction --no-dev --no-scripts --optimize-autoloader');
-
-    fs.removeSync('build/composer.lock');
-    del.sync('**/.DS_Store');
-    del.sync('build/**/.git');
-
-    zip('build', {saveTo: filename}, function (error) {
-        if (error) {
-            console.log('Zip Error', error);
-        }
-
-        done();
-    });
-}
+const glob = require('glob'); // Add this missing require
 
 function clean(done) {
-    // Delete all CSS and minified CSS files
-    fs.removeSync('assets/css/**/*.css');
-    fs.removeSync('assets/css/**/*.min.css');
+    // Clean all generated CSS files
+    del.sync([
+        'assets/css/**/*.css',
+        'assets/css/**/*.min.css',
+        '!assets/css/**/*.scss'  // Keep source files
+    ]);
+    done();
+}
+
+function cleanRoot(done) {
+    console.log('🧹 Cleaning root directory...');
+    
+    // Remove existing build directory
+    if (fs.existsSync('build')) {
+        fs.removeSync('build');
+    }
+    
+    // Remove build.zip
+    if (fs.existsSync('build.zip')) {
+        fs.removeSync('build.zip');
+        console.log(`🗑️  Removed: build.zip`);
+    }
+    
+    // Remove any existing zip files with the pattern
+    const zipFiles = glob.sync('@webSchedulr*.zip');
+    zipFiles.forEach(file => {
+        fs.removeSync(file);
+        console.log(`🗑️  Removed: ${file}`);
+    });
+    
     done();
 }
 
@@ -88,19 +62,26 @@ function scripts() {
         .src(['assets/js/**/*.js', '!assets/js/**/*.min.js'])
         .pipe(plumber())
         .pipe(changed('assets/js/**/*'))
-        .pipe(babel({comments: false}))
+        .pipe(babel({
+            comments: false,
+            presets: ['minify'] // Add minification
+        }))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/js'));
 }
 
 function styles() {
     return gulp
-        .src(['assets/css/**/*.scss', '!assets/css/**/*.min.css'])
+        .src(['assets/css/**/*.scss'])
         .pipe(plumber())
-        .pipe(cached())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(gulp.dest('assets/css'))
-        .pipe(css())
+        .pipe(sass({
+            outputStyle: 'compressed',
+            includePaths: ['node_modules']
+        }).on('error', sass.logError))
+        .pipe(css({
+            level: 2,
+            compatibility: 'ie9'
+        }))
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('assets/css'));
 }
@@ -187,11 +168,236 @@ function vendor(done) {
     done();
 }
 
+function updateCacheToken(done) {
+    const configPath = 'application/config/app.php';
+    const timestamp = Math.floor(Date.now() / 1000);
+    const version = new Date().toISOString().slice(2,7).replace('-','');
+    const newToken = `WS${version}_v${timestamp.toString().slice(-6)}`;
+    
+    if (!fs.existsSync(configPath)) {
+        console.error('❌ Config file not found:', configPath);
+        done();
+        return;
+    }
+    
+    let content = fs.readFileSync(configPath, 'utf8');
+    
+    content = content.replace(
+        /\$config\['cache_busting_token'\]\s*=\s*'[^']*';\s*\/\/.*$/m,
+        `$config['cache_busting_token'] = '${newToken}'; // Auto-generated during build`
+    );
+    
+    fs.writeFileSync(configPath, content);
+    console.log(`🔄 Updated cache token to: ${newToken}`);
+    done();
+}
+
+function createBuildStructure(done) {
+    console.log('📁 Creating build structure...');
+    
+    fs.ensureDirSync('build');
+    
+    // Copy main directories
+    fs.copySync('application', 'build/application');
+    fs.copySync('system', 'build/system');
+    
+    // Copy assets but exclude source files for production
+    fs.copySync('assets', 'build/assets', {
+        filter: (src) => {
+            // Exclude .scss files and unminified .css files in production
+            if (src.endsWith('.scss')) return false;
+            if (src.endsWith('.css') && !src.endsWith('.min.css')) return false;
+            return true;
+        }
+    });
+    
+    // Create storage structure
+    const storageDirs = ['backups', 'cache', 'logs', 'sessions', 'uploads'];
+    storageDirs.forEach(dir => {
+        const buildStorageDir = `build/storage/${dir}`;
+        fs.ensureDirSync(buildStorageDir);
+        
+        // Copy .htaccess and index.html files if they exist
+        if (fs.existsSync(`storage/${dir}/.htaccess`)) {
+            fs.copySync(`storage/${dir}/.htaccess`, `${buildStorageDir}/.htaccess`);
+        }
+        if (fs.existsSync(`storage/${dir}/index.html`)) {
+            fs.copySync(`storage/${dir}/index.html`, `${buildStorageDir}/index.html`);
+        }
+    });
+    
+    // Copy root files
+    const rootFiles = [
+        'index.php', 'patch.php', 'composer.json', 'composer.lock', 
+        'config-sample.php', 'CHANGELOG.md', 'README.md', 'LICENSE'
+    ];
+    
+    rootFiles.forEach(file => {
+        if (fs.existsSync(file)) {
+            fs.copySync(file, `build/${file}`);
+        }
+    });
+    
+    console.log('✅ Build structure created');
+    done();
+}
+
+function installComposer(done) {
+    console.log('📦 Installing PHP dependencies...');
+    try {
+        childProcess.execSync('cd build && composer install --no-interaction --no-dev --optimize-autoloader', {
+            stdio: 'inherit'
+        });
+        console.log('✅ Composer dependencies installed');
+        done();
+    } catch (error) {
+        console.error('❌ Composer install failed:', error.message);
+        done(error);
+    }
+}
+
+function optimizeGoogleServices(done) {
+    console.log('⚡ Optimizing Google services...');
+    
+    const keepServices = ['Calendar', 'Analytics'];
+    const servicesPath = 'build/vendor/google/apiclient-services/src/';
+    
+    if (!fs.existsSync(servicesPath)) {
+        console.log('ℹ️  Google services directory not found, skipping optimization');
+        done();
+        return;
+    }
+    
+    const services = fs.readdirSync(servicesPath, { withFileTypes: true })
+        .filter(dirent => dirent.isDirectory())
+        .map(dirent => dirent.name);
+    
+    let removed = 0;
+    services.forEach(service => {
+        if (!keepServices.includes(service)) {
+            fs.removeSync(`${servicesPath}${service}`);
+            removed++;
+        }
+    });
+    
+    console.log(`🗑️  Removed ${removed} unused Google services`);
+    done();
+}
+
+function finalCleanup(done) {
+    console.log('🧹 Final cleanup...');
+    
+    // Remove dev files from build
+    const devFiles = [
+        'build/composer.lock',
+        'build/.git',
+        'build/.gitignore',
+        'build/node_modules',
+        'build/package.json',
+        'build/gulpfile.js'
+    ];
+    
+    devFiles.forEach(file => {
+        if (fs.existsSync(file)) {
+            fs.removeSync(file);
+        }
+    });
+    
+    // Remove .DS_Store files
+    try {
+        childProcess.execSync('find build -name ".DS_Store" -delete 2>/dev/null || true');
+    } catch (error) {
+        // Ignore errors on non-Unix systems
+    }
+    
+    done();
+}
+
+function getCacheToken() {
+    const configPath = 'application/config/app.php';
+    if (!fs.existsSync(configPath)) {
+        return 'unknown';
+    }
+    
+    const content = fs.readFileSync(configPath, 'utf8');
+    const match = content.match(/\$config\['cache_busting_token'\]\s*=\s*'([^']*)'/);
+    
+    if (match && match[1]) {
+        // Extract just the version part (e.g., "v128975" from "WS2506_v128975")
+        const tokenMatch = match[1].match(/v(\d+)/);
+        return tokenMatch ? tokenMatch[1] : match[1];
+    }
+    
+    return 'unknown';
+}
+
+function createArchive(done) {
+    const cacheToken = getCacheToken();
+    const versionedFilename = `@webSchedulr_v${cacheToken}.zip`;
+    const buildFilename = 'build.zip';
+    
+    console.log(`📦 Creating archives...`);
+    
+    // Remove any existing files
+    if (fs.existsSync(versionedFilename)) {
+        fs.removeSync(versionedFilename);
+    }
+    if (fs.existsSync(buildFilename)) {
+        fs.removeSync(buildFilename);
+    }
+    
+    // Create the versioned archive first
+    zip('build', { saveTo: versionedFilename }, function (error) {
+        if (error) {
+            console.error('❌ Versioned archive creation failed:', error);
+            done(error);
+            return;
+        }
+        
+        console.log(`✅ Versioned archive created: ${versionedFilename}`);
+        
+        // Create build.zip by copying the versioned file
+        fs.copySync(versionedFilename, buildFilename);
+        console.log(`✅ Build archive created: ${buildFilename}`);
+        
+        // Get file size for info
+        const stats = fs.statSync(versionedFilename);
+        const fileSizeInMB = (stats.size / (1024 * 1024)).toFixed(2);
+        console.log(`📊 Archive size: ${fileSizeInMB} MB`);
+        
+        done();
+    });
+}
+
+function build(done) {
+    console.log('🚀 Build process completed successfully!');
+    done();
+}
+
+// Updated exports
 exports.clean = gulp.series(clean);
+exports.cleanRoot = cleanRoot;
 exports.vendor = gulp.series(vendor);
 exports.scripts = gulp.series(scripts);
 exports.styles = gulp.series(styles);
+exports.updateCacheToken = updateCacheToken;
 exports.compile = gulp.series(clean, vendor, scripts, styles);
+
+// Complete build process
+exports.build = gulp.series(
+    cleanRoot,                // Clean root directory and remove old zips
+    clean,                    // Clean assets
+    vendor,                   // Copy vendor files
+    scripts,                  // Compile JS
+    styles,                   // Compile CSS
+    updateCacheToken,         // Update cache token
+    createBuildStructure,     // Copy files to build directory
+    installComposer,          // Install PHP dependencies
+    optimizeGoogleServices,   // Optimize Google services
+    finalCleanup,            // Clean up dev files
+    createArchive,           // Create archives
+    build                    // Log completion
+);
+
 exports.dev = gulp.series(clean, vendor, scripts, styles, watch);
-exports.build = gulp.series(clean, vendor, scripts, styles, archive);
 exports.default = exports.dev;

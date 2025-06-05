@@ -56,5 +56,11 @@
         "psr-4": {
             "Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Calendar",
+            "Analytics"
+        ]
     }
 }
