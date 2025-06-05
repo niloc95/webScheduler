@@ -15,4 +15,4 @@ $config['url'] = Config::BASE_URL;
 
 $config['debug'] = Config::DEBUG_MODE;
 
-$config['cache_busting_token'] = 'WS2506_v133943'; // Auto-generated during build
+$config['cache_busting_token'] = 'WS2506_v145305'; // Auto-generated during build

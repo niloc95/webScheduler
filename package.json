@@ -54,6 +54,7 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-debug": "^4.0.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-remember": "^1.0.1",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "prettier": "^3.0.0",
@@ -64,6 +65,8 @@
     "start": "NODE_ENV=development npx gulp dev",
     "dev": "NODE_ENV=development npx gulp dev",
     "build": "NODE_ENV=production npx gulp build",
+    "sync-versions": "npx gulp updateVersions",
     "build:dev": "NODE_ENV=development npx gulp compile"
-  }
+  },
+  "version": "1.5.1"
 }
