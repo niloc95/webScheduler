@@ -46,6 +46,7 @@
     "babel-preset-minify": "^0.5.2",
     "del": "^6.0.0",
     "fs-extra": "^11.1.0",
+    "glob": "^10.4.5",
     "gulp": "^5.0.0",
     "gulp-babel": "^8.0.0",
     "gulp-cached": "^1.1.1",
@@ -60,8 +61,9 @@
     "zip-dir": "^2.0.0"
   },
   "scripts": {
-    "start": "npx --yes gulp",
-    "build": "npx gulp build",
-    "docs": "npx gulp docs"
+    "start": "NODE_ENV=development npx gulp dev",
+    "dev": "NODE_ENV=development npx gulp dev",
+    "build": "NODE_ENV=production npx gulp build",
+    "build:dev": "NODE_ENV=development npx gulp compile"
   }
 }
